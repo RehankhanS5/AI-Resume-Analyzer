@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeAI | Analytics</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">AI</div>
+
+            <div>
+                <h2>ResumeAI</h2>
+                <p>AI Resume Analyzer</p>
+            </div>
+
+        </div>
+
+
+        <div class="nav-menu">
+
+            <a href="index.html" class="nav-item">
+                <span>📊</span>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="analyzer.html" class="nav-item">
+                <span>📄</span>
+                <span>Resume Analyzer</span>
+            </a>
+
+            <a href="candidates.html" class="nav-item">
+                <span>👥</span>
+                <span>Candidates</span>
+            </a>
+
+            <a href="jobs.html" class="nav-item">
+                <span>💼</span>
+                <span>Job Postings</span>
+            </a>
+
+            <a href="analytics.html" class="nav-item active">
+                <span>📈</span>
+                <span>Analytics</span>
+            </a>
+
+            <a href="settings.html" class="nav-item">
+                <span>⚙️</span>
+                <span>Settings</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main-content">
+
+        <div class="top-header">
+
+            <div>
+                <h1>Analytics</h1>
+                <p>Insights from your resume analysis</p>
+            </div>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+                <div class="stat-icon">📄</div>
+                <h3 id="analyticsTotal">0</h3>
+                <p>Total Resumes</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🎯</div>
+                <h3 id="analyticsScore">0%</h3>
+                <p>Average Match Score</p>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🤖</div>
+                <h3 id="analyticsCandidates">0</h3>
+                <p>Candidates Analyzed</p>
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-header">
+                <h2>Analysis Overview</h2>
+            </div>
+
+            <div class="skill">
+
+                <div class="skill-info">
+                    <span>Resume Match Score</span>
+                    <span id="matchScoreText">0%</span>
+                </div>
+
+                <div class="progress">
+                    <div
+                        class="progress-bar"
+                        id="matchProgress"
+                        style="width: 0%">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

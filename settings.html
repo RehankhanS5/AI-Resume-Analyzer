@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeAI | Settings</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    AI
+                </div>
+
+                <div>
+                    <h2>ResumeAI</h2>
+                    <p>AI Resume Analyzer</p>
+                </div>
+
+            </div>
+
+
+            <div class="nav-menu">
+
+                <a href="index.html" class="nav-item">
+                    <span>📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="analyzer.html" class="nav-item">
+                    <span>📄</span>
+                    <span>Resume Analyzer</span>
+                </a>
+
+                <a href="candidates.html" class="nav-item">
+                    <span>👥</span>
+                    <span>Candidates</span>
+                </a>
+
+                <a href="job-postings.html" class="nav-item">
+                    <span>💼</span>
+                    <span>Job Postings</span>
+                </a>
+
+                <a href="analytics.html" class="nav-item">
+                    <span>📈</span>
+                    <span>Analytics</span>
+                </a>
+
+                <a href="settings.html" class="nav-item active">
+                    <span>⚙️</span>
+                    <span>Settings</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+            <div class="top-header">
+
+                <div>
+                    <h1>Settings</h1>
+                    <p>Manage your ResumeAI preferences and system configuration</p>
+                </div>
+
+                <div class="header-actions">
+
+                    <div class="status">
+                        🟢 AI System Ready
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE SETTINGS -->
+
+            <div class="card settings-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>👤 Profile Settings</h2>
+                        <p class="settings-description">
+                            Manage your profile information
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="settings-form">
+
+                    <div class="input-group">
+
+                        <label>Your Name</label>
+
+                        <input
+                            type="text"
+                            id="userName"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label>Email Address</label>
+
+                        <input
+                            type="email"
+                            id="userEmail"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <button
+                        class="save-btn"
+                        onclick="saveProfile()"
+                    >
+                        Save Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ANALYSIS SETTINGS -->
+
+            <div class="card settings-card">
+
+                <div class="card-header">
+
+                    <div>
+                        <h2>🤖 AI Analysis Settings</h2>
+
+                        <p class="settings-description">
+                            Configure how ResumeAI analyzes resumes
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h3>Detailed Analysis</h3>
+
+                        <p>
+                            Receive detailed AI feedback and recommendations.
+                        </p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="detailedAnalysis"
+                            checked
+                        >
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h3>Keyword Analysis</h3>
+
+                        <p>
+                            Detect important skills and missing keywords.
+                        </p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="keywordAnalysis"
+                            checked
+                        >
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h3>Resume Match Score</h3>
+
+                        <p>
+                            Calculate compatibility between the resume and job description.
+                        </p>
+
+                    </div>
+
+                    <label class="switch">
+
+                        <input
+                            type="checkbox"
+                            id="matchScore"
+                            checked
+                        >
+
+                        <span class="slider"></span>
+
+                    </label>
+
+                </div>
+
+
+                <button
+                    class="save-btn"
+                    onclick="saveAISettings()"
+                >
+                    Save AI Settings
+                </button>
+
+            </div>
+
+
+
+            <!-- DATA SETTINGS -->
+
+            <div class="card settings-card danger-card">
+
+                <div class="card-header">
+
+                    <div>
+
+                        <h2>🗑️ Data Management</h2>
+
+                        <p class="settings-description">
+                            Manage saved ResumeAI data
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="setting-option">
+
+                    <div>
+
+                        <h3>Clear Analysis History</h3>
+
+                        <p>
+                            Remove all saved resume analysis results from this browser.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        class="danger-btn"
+                        onclick="clearData()"
+                    >
+                        Clear Data
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

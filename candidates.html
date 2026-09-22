@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeAI | Candidates</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    AI
+                </div>
+
+                <div>
+                    <h2>ResumeAI</h2>
+                    <p>AI Resume Analyzer</p>
+                </div>
+
+            </div>
+
+
+            <div class="nav-menu">
+
+                <a href="index.html" class="nav-item">
+                    <span>📊</span>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="analyzer.html" class="nav-item">
+                    <span>📄</span>
+                    <span>Resume Analyzer</span>
+                </a>
+
+                <a href="candidates.html" class="nav-item active">
+                    <span>👥</span>
+                    <span>Candidates</span>
+                </a>
+
+                <a href="jobs.html" class="nav-item">
+                    <span>💼</span>
+                    <span>Job Postings</span>
+                </a>
+
+                <a href="skills.html" class="nav-item">
+                    <span>📈</span>
+                    <span>Skills Analysis</span>
+                </a>
+
+                <a href="analytics.html" class="nav-item">
+                    <span>📊</span>
+                    <span>Analytics</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+
+        <main class="main-content">
+
+            <div class="top-header">
+
+                <div>
+                    <h1>Candidates</h1>
+                    <p>View and manage analyzed candidates</p>
+                </div>
+
+                <a href="analyzer.html" class="primary-btn">
+                    + Analyze Candidate
+                </a>
+
+            </div>
+
+
+            <!-- CANDIDATE SUMMARY -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <h3 id="candidateCount">0</h3>
+
+                    <p>Total Candidates</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🎯
+                    </div>
+
+                    <h3 id="topScore">--</h3>
+
+                    <p>Highest Match Score</p>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📈
+                    </div>
+
+                    <h3 id="averageCandidateScore">--</h3>
+
+                    <p>Average Score</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CANDIDATES TABLE -->
+
+            <div class="card candidates-card">
+
+                <div class="card-header">
+
+                    <h2>Analyzed Candidates</h2>
+
+                    <span class="candidate-status">
+                        AI Powered
+                    </span>
+
+                </div>
+
+
+                <div id="candidateList">
+
+                    <div class="empty-state">
+
+                        <div class="empty-icon">
+                            👤
+                        </div>
+
+                        <h3>No candidates analyzed yet</h3>
+
+                        <p>
+                            Analyze a resume to automatically add
+                            candidate information here.
+                        </p>
+
+                        <a href="analyzer.html" class="primary-btn">
+                            Analyze Resume
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

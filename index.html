@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeAI | AI Resume Intelligence</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- =========================================
+             SIDEBAR
+        ========================================== -->
+
+        <aside class="sidebar">
+
+            <!-- Logo -->
+            <div class="brand">
+
+                <div class="brand-icon">
+                    ✦
+                </div>
+
+                <div class="brand-text">
+                    <h2>ResumeAI</h2>
+                    
+                </div>
+
+            </div>
+
+
+            <!-- Workspace -->
+            <div class="workspace">
+
+                <span class="workspace-label">
+                    WORKSPACE
+                </span>
+
+                <div class="workspace-box">
+
+                    <div class="workspace-avatar">
+                        AI
+                    </div>
+
+                    <div>
+                        <strong>Personal Workspace</strong>
+                        <small>AI Resume Analyzer</small>
+                    </div>
+
+                    <span class="workspace-arrow">
+                        ›
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="navigation">
+
+                <span class="nav-label">
+                    MENU
+                </span>
+
+
+                <a href="index.html" class="nav-item active">
+
+                    <span class="nav-icon">⌂</span>
+
+                    <span>Dashboard</span>
+
+                </a>
+
+
+                <a href="analyzer.html" class="nav-item">
+
+                    <span class="nav-icon">▣</span>
+
+                    <span>Resume Analyzer</span>
+
+                    <span class="nav-badge">
+                        AI
+                    </span>
+
+                </a>
+
+
+                <a href="candidates.html" class="nav-item">
+
+                    <span class="nav-icon">♙</span>
+
+                    <span>Candidates</span>
+
+                </a>
+
+
+                <a href="jobs.html" class="nav-item">
+
+                    <span class="nav-icon">▤</span>
+
+                    <span>Job Postings</span>
+
+                </a>
+
+
+                <a href="skills.html" class="nav-item">
+
+                    <span class="nav-icon">◇</span>
+
+                    <span>Skills Intelligence</span>
+
+                </a>
+
+
+                <a href="analytics.html" class="nav-item">
+
+                    <span class="nav-icon">◒</span>
+
+                    <span>Analytics</span>
+
+                </a>
+
+            </nav>
+
+
+            <!-- Bottom navigation -->
+            <div class="sidebar-bottom">
+
+                <a href="settings.html" class="nav-item">
+
+                    <span class="nav-icon">⚙</span>
+
+                    <span>Settings</span>
+
+                </a>
+
+
+                <div class="sidebar-profile">
+
+                    <div class="profile-avatar">
+                        RK
+                    </div>
+
+                    <div class="profile-info">
+
+                        <strong>Resume User</strong>
+
+                        <span>AI Workspace</span>
+
+                    </div>
+
+                    <span class="profile-menu">
+                        ⋮
+                    </span>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================================
+             MAIN CONTENT
+        ========================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =====================================
+                 TOP HEADER
+            ====================================== -->
+
+            <header class="top-header">
+
+                <div class="header-left">
+
+                    <button class="mobile-menu">
+                        ☰
+                    </button>
+
+                    <div>
+
+                        <div class="breadcrumb">
+                            Workspace / Dashboard
+                        </div>
+
+                        <h1>
+                            Dashboard
+                        </h1>
+
+                        <p>
+                            Monitor your resume intelligence and ATS performance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="header-actions">
+
+                    <div class="system-status">
+
+                        <span class="status-dot"></span>
+
+                        <span>
+                            AI System Ready
+                        </span>
+
+                    </div>
+
+
+                    <button class="icon-button refresh-btn" title="Refresh dashboard">
+                        ↻
+                    </button>
+
+
+                    <a href="analyzer.html" class="primary-button">
+
+                        <span>＋</span>
+
+                        New Analysis
+
+                    </a>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =====================================
+                 HERO / WELCOME
+            ====================================== -->
+
+            <section class="hero-card">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+
+                        <span>✦</span>
+
+                        AI-POWERED RESUME INTELLIGENCE
+
+                    </div>
+
+
+                    <h2>
+                        Turn your resume into
+                        <span>career intelligence.</span>
+                    </h2>
+
+
+                    <p>
+                        Analyze ATS compatibility, discover missing skills,
+                        identify important keywords and get AI-powered
+                        recommendations for your target role.
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a href="analyzer.html" class="hero-button">
+
+                            Analyze Resume
+
+                            <span>→</span>
+
+                        </a>
+
+
+                        <a href="analytics.html" class="secondary-button">
+
+                            View Analytics
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero visual -->
+
+                <div class="hero-visual">
+
+                    <div class="glow glow-one"></div>
+                    <div class="glow glow-two"></div>
+
+
+                    <div class="score-preview">
+
+                        <div class="score-header">
+
+                            <span>
+                                Latest ATS Score
+                            </span>
+
+                            <span class="score-status">
+                                AI
+                            </span>
+
+                        </div>
+
+
+                        <div class="score-circle">
+
+                            <div>
+
+                                <strong id="heroScore">
+                                    87
+                                </strong>
+
+                                <span>
+                                    /100
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="score-footer">
+
+                            <strong>
+                                Strong Match
+                            </strong>
+
+                            <span>
+                                ↑ 12% from previous
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 KPI STATS
+            ====================================== -->
+
+            <section class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon purple">
+                            ◫
+                        </div>
+
+                        <span class="stat-trend positive">
+                            +12%
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-value" id="totalResumes">
+                        0
+                    </div>
+
+                    <div class="stat-label">
+                        Total Resumes
+                    </div>
+
+                    <div class="stat-description">
+                        Resumes processed
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon blue">
+                            ◉
+                        </div>
+
+                        <span class="stat-trend positive">
+                            +8%
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-value" id="analyzedCandidates">
+                        0
+                    </div>
+
+                    <div class="stat-label">
+                        Analyzed Candidates
+                    </div>
+
+                    <div class="stat-description">
+                        AI evaluations completed
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon green">
+                            ◎
+                        </div>
+
+                        <span class="stat-trend positive">
+                            +5%
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-value" id="averageScore">
+                        0%
+                    </div>
+
+                    <div class="stat-label">
+                        Latest Match Score
+                    </div>
+
+                    <div class="stat-description">
+                        ATS compatibility
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon orange">
+                            ✦
+                        </div>
+
+                        <span class="ai-live">
+                            LIVE
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat-value">
+                        AI
+                    </div>
+
+                    <div class="stat-label">
+                        Powered Analysis
+                    </div>
+
+                    <div class="stat-description">
+                        Gemini intelligence
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 MAIN DASHBOARD GRID
+            ====================================== -->
+
+            <section class="dashboard-grid">
+
+
+                <!-- =================================
+                     RECENT ANALYSIS
+                ================================== -->
+
+                <div class="dashboard-card recent-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                ACTIVITY
+                            </span>
+
+                            <h2>
+                                Recent Analysis
+                            </h2>
+
+                        </div>
+
+
+                        <a href="analyzer.html" class="card-link">
+                            Analyze New →
+                        </a>
+
+                    </div>
+
+
+                    <div class="recent-analysis">
+
+                        <div class="candidate-info">
+
+                            <div class="candidate-avatar" id="candidateAvatar">
+                                ?
+                            </div>
+
+
+                            <div class="candidate-details">
+
+                                <h3 id="latestCandidate">
+                                    No analysis yet
+                                </h3>
+
+                                <p id="analysisStatus">
+                                    Analyze your first resume to see results here
+                                </p>
+
+                                <div class="analysis-meta">
+
+                                    <span>
+                                        ◷ Recently
+                                    </span>
+
+                                    <span>
+                                        ◈ Resume Analysis
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="analysis-score">
+
+                            <span class="score-label">
+                                ATS SCORE
+                            </span>
+
+                            <strong class="score medium" id="latestScore">
+                                --
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Empty state -->
+
+                    <div class="empty-analysis" id="emptyAnalysis">
+
+                        <div class="empty-icon">
+                            ✦
+                        </div>
+
+                        <h3>
+                            Start your first analysis
+                        </h3>
+
+                        <p>
+                            Upload a resume and job description to generate
+                            your personalized AI report.
+                        </p>
+
+                        <a href="analyzer.html" class="secondary-button">
+                            Analyze Resume →
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     ATS SCORE
+                ================================== -->
+
+                <div class="dashboard-card ats-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                PERFORMANCE
+                            </span>
+
+                            <h2>
+                                ATS Overview
+                            </h2>
+
+                        </div>
+
+                        <button class="more-button">
+                            ⋮
+                        </button>
+
+                    </div>
+
+
+                    <div class="ats-content">
+
+                        <div class="mini-score">
+
+                            <div class="mini-score-circle">
+
+                                <span>
+                                    87
+                                </span>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Strong Match
+                                </strong>
+
+                                <p>
+                                    Your latest resume
+                                    performance
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="score-bars">
+
+                            <div class="score-row">
+
+                                <div>
+
+                                    <span>
+                                        Skills Match
+                                    </span>
+
+                                    <strong>
+                                        92%
+                                    </strong>
+
+                                </div>
+
+                                <div class="score-progress">
+
+                                    <span style="width:92%"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="score-row">
+
+                                <div>
+
+                                    <span>
+                                        Keyword Match
+                                    </span>
+
+                                    <strong>
+                                        88%
+                                    </strong>
+
+                                </div>
+
+                                <div class="score-progress">
+
+                                    <span style="width:88%"></span>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="score-row">
+
+                                <div>
+
+                                    <span>
+                                        Experience
+                                    </span>
+
+                                    <strong>
+                                        81%
+                                    </strong>
+
+                                </div>
+
+                                <div class="score-progress">
+
+                                    <span style="width:81%"></span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     SKILLS ANALYSIS
+                ================================== -->
+
+                <div class="dashboard-card skills-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                SKILL INTELLIGENCE
+                            </span>
+
+                            <h2>
+                                Skills Analysis
+                            </h2>
+
+                        </div>
+
+
+                        <a href="skills.html" class="card-link">
+                            View All →
+                        </a>
+
+                    </div>
+
+
+                    <div class="skills-list">
+
+
+                        <div class="skill-row">
+
+                            <div class="skill-name">
+
+                                <div class="skill-dot python">
+                                    P
+                                </div>
+
+                                <span>
+                                    Python
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-value" id="pythonScore">
+                                0%
+                            </div>
+
+
+                            <div class="skill-progress">
+
+                                <span
+                                    id="pythonBar"
+                                    style="width:0%">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="skill-row">
+
+                            <div class="skill-name">
+
+                                <div class="skill-dot sql">
+                                    S
+                                </div>
+
+                                <span>
+                                    SQL
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-value" id="sqlScore">
+                                0%
+                            </div>
+
+
+                            <div class="skill-progress">
+
+                                <span
+                                    id="sqlBar"
+                                    style="width:0%">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="skill-row">
+
+                            <div class="skill-name">
+
+                                <div class="skill-dot ml">
+                                    ML
+                                </div>
+
+                                <span>
+                                    Machine Learning
+                                </span>
+
+                            </div>
+
+
+                            <div class="skill-value" id="mlScore">
+                                0%
+                            </div>
+
+
+                            <div class="skill-progress">
+
+                                <span
+                                    id="mlBar"
+                                    style="width:0%">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================
+                     AI INSIGHTS
+                ================================== -->
+
+                <div class="dashboard-card insights-card">
+
+                    <div class="card-header">
+
+                        <div>
+
+                            <span class="card-eyebrow">
+                                AI INSIGHTS
+                            </span>
+
+                            <h2>
+                                Resume Intelligence
+                            </h2>
+
+                        </div>
+
+                        <div class="ai-icon">
+                            ✦
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-item">
+
+                        <div class="insight-icon success">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Strong technical foundation
+                            </strong>
+
+                            <p>
+                                Your resume demonstrates relevant
+                                technical skills for AI and software roles.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-item">
+
+                        <div class="insight-icon warning">
+                            !
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Improve keyword coverage
+                            </strong>
+
+                            <p>
+                                Add relevant job-specific keywords where
+                                they accurately reflect your experience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="insight-item">
+
+                        <div class="insight-icon info">
+                            →
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Add measurable achievements
+                            </strong>
+
+                            <p>
+                                Quantify project outcomes to make your
+                                resume more impactful.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 QUICK ACTIONS
+            ====================================== -->
+
+            <section class="quick-section">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="card-eyebrow">
+                            PRODUCTIVITY
+                        </span>
+
+                        <h2>
+                            Quick Actions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="quick-grid">
+
+
+                    <a href="analyzer.html" class="quick-card">
+
+                        <div class="quick-icon purple">
+                            ✦
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Analyze Resume
+                            </strong>
+
+                            <p>
+                                Run a new ATS analysis
+                            </p>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a href="jobs.html" class="quick-card">
+
+                        <div class="quick-icon blue">
+                            +
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Add Job
+                            </strong>
+
+                            <p>
+                                Save a target position
+                            </p>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a href="candidates.html" class="quick-card">
+
+                        <div class="quick-icon green">
+                            ◉
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Candidates
+                            </strong>
+
+                            <p>
+                                View analyzed resumes
+                            </p>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a href="analytics.html" class="quick-card">
+
+                        <div class="quick-icon orange">
+                            ◒
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Analytics
+                            </strong>
+
+                            <p>
+                                Explore performance data
+                            </p>
+
+                        </div>
+
+                        <span>
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =====================================
+                 FOOTER
+            ====================================== -->
+
+            <footer class="dashboard-footer">
+
+                <div>
+
+                    <strong>
+                        ResumeAI
+                    </strong>
+
+                    <span>
+                        AI-powered resume intelligence
+                    </span>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Built for smarter job applications
+                    </span>
+
+                </div>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

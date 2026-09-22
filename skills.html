@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ResumeAI | Skills Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="dashboard-container">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                AI
+            </div>
+
+            <div>
+
+                <h2>ResumeAI</h2>
+
+                <p>AI Resume Analyzer</p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="nav-menu">
+
+
+            <a href="index.html" class="nav-item">
+
+                <span>📊</span>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="analyzer.html" class="nav-item">
+
+                <span>📄</span>
+
+                <span>Resume Analyzer</span>
+
+            </a>
+
+
+            <a href="candidates.html" class="nav-item">
+
+                <span>👥</span>
+
+                <span>Candidates</span>
+
+            </a>
+
+
+            <a href="jobs.html" class="nav-item">
+
+                <span>💼</span>
+
+                <span>Job Postings</span>
+
+            </a>
+
+
+            <a href="skills.html" class="nav-item active">
+
+                <span>📈</span>
+
+                <span>Skills Analysis</span>
+
+            </a>
+
+
+            <a href="analytics.html" class="nav-item">
+
+                <span>📊</span>
+
+                <span>Analytics</span>
+
+            </a>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+
+        <div class="top-header">
+
+
+            <div>
+
+                <h1>Skills Analysis</h1>
+
+                <p>
+                    Analyze technical skills detected from candidate resumes
+                </p>
+
+            </div>
+
+
+            <a href="analyzer.html" class="primary-btn">
+
+                + Analyze Resume
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- SKILL OVERVIEW -->
+
+        <div class="stats-grid">
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🧠
+                </div>
+
+                <h3 id="totalSkills">
+                    0
+                </h3>
+
+                <p>
+                    Skills Detected
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🐍
+                </div>
+
+                <h3 id="pythonSkill">
+                    0%
+                </h3>
+
+                <p>
+                    Python Match
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🗄️
+                </div>
+
+                <h3 id="sqlSkill">
+                    0%
+                </h3>
+
+                <p>
+                    SQL Match
+                </p>
+
+            </div>
+
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🤖
+                </div>
+
+                <h3 id="mlSkill">
+                    0%
+                </h3>
+
+                <p>
+                    AI / ML Match
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- SKILLS -->
+
+        <div class="card skills-page-card">
+
+
+            <div class="card-header">
+
+                <h2>
+                    Detected Skills
+                </h2>
+
+                <span class="candidate-status">
+                    Resume Analysis
+                </span>
+
+            </div>
+
+
+
+            <div class="skill">
+
+
+                <div class="skill-info">
+
+                    <span>
+                        🐍 Python
+                    </span>
+
+                    <span id="pythonPercent">
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        id="pythonProgress"
+                        style="width: 0%">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="skill">
+
+
+                <div class="skill-info">
+
+                    <span>
+                        🗄️ SQL
+                    </span>
+
+                    <span id="sqlPercent">
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        id="sqlProgress"
+                        style="width: 0%">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="skill">
+
+
+                <div class="skill-info">
+
+                    <span>
+                        🤖 Machine Learning
+                    </span>
+
+                    <span id="mlPercent">
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        id="mlProgress"
+                        style="width: 0%">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="skill">
+
+
+                <div class="skill-info">
+
+                    <span>
+                        🌐 HTML / CSS / JavaScript
+                    </span>
+
+                    <span id="webPercent">
+                        0%
+                    </span>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        id="webProgress"
+                        style="width: 0%">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
